@@ -3,12 +3,14 @@
 #include <resmgr.h>
 #include <viewport.h>
 #include <algorithm>
+#include <math.h>
 
 Console::Console() {
     m_isVisible = false;
 	m_isActive 	= false;
 	m_isHidden	= true;
     m_speed 	= 2;
+	m_fontSize	= 24;
 	
     m_background.setSize(sf::Vector2f(VIEWPORT->getSize().x, VIEWPORT->getSize().y * 0.8));
     //m_background.setTexture(ResMgr::getTexture("CONSOLE_BG"));
@@ -16,21 +18,44 @@ Console::Console() {
     m_background.setPosition(0, -m_background.getSize().y);
 	
 	m_cmdline = sf::Text { "]", *ResMgr::getFont("RMR") };
+	m_cmdline.setCharacterSize(m_fontSize);
 	m_cmdline.setOrigin(m_cmdline.getLocalBounds().left, m_cmdline.getLocalBounds().top);
 	
 	m_output = sf::Text { "", *ResMgr::getFont("RMR") };
+	m_output.setCharacterSize(m_fontSize);
 	m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top);
 	
+	m_outputLines = (24 / m_fontSize) * 19;
+		
 
 	m_prompt 	= "]";
 	m_cursor 	= "_";
 	m_cmd		= "";
-	m_history	= "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAEDALUS CMD";
+	
+	for(unsigned int i = 0; i < m_outputLines; ++i)
+		m_history += '\n';
+		
+	m_history += "DEADALUS CMD";
+	//m_history	= "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAEDALUS CMD";
 	
 	m_output.setString(m_history);
+	//m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top + m_output.getLocalBounds().height);
+	std::cout << m_outputLines << "\n";
 }
 
 Console::~Console() {
+}
+
+void Console::resetOutput() {
+	m_history = "";
+	
+	for(unsigned int i = 0; i < m_outputLines; ++i)
+		m_history += '\n';
+		
+	m_history += "DEADALUS CMD";
+	//m_history	= "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAEDALUS CMD";
+	
+	m_output.setString(m_history);
 }
 
 void Console::show(unsigned int speed) {
@@ -55,7 +80,9 @@ void Console::expand() {
 
 		m_background.setPosition(0, ypos_bg);
 		m_cmdline.setPosition(10, ypos_prompt);
-		m_output.setPosition(10, ypos_bg);
+		//m_output.setPosition(10, ypos_bg + 10);
+		m_output.setPosition(10, ypos_prompt - m_output.getLocalBounds().height - m_cmdline.getLocalBounds().height - 10);
+		//m_output.setPosition(10, ypos_bg + m_background.getSize().y - m_output.getLocalBounds().height - m_output.getLocalBounds().height / m_outputLines - 10); /// !!!!!!!
 		//m_cursor.setPosition(m_cmdline.getPosition().x + m_cmdline.getLocalBounds().width, ypos_prompt);
 		m_isHidden = false;
 	}
@@ -76,7 +103,8 @@ void Console::retract() {
 
 		m_background.setPosition(0, ypos_bg);
 		m_cmdline.setPosition(10, ypos_prompt);
-		m_output.setPosition(10, ypos_bg);
+		m_output.setPosition(10, ypos_prompt - m_output.getLocalBounds().height - m_cmdline.getLocalBounds().height - 10);
+		//m_output.setPosition(10, ypos_bg + m_background.getSize().y - m_output.getLocalBounds().height - m_output.getLocalBounds().height / m_outputLines - 10); //// !!!!!!
 	}
 }
 
@@ -93,9 +121,11 @@ void Console::draw() {
 		
 		if (m_clock.getElapsedTime().asMilliseconds() <= 500) {
 			m_cmdline.setString(m_prompt + m_cmd + m_cursor);
+			//m_output.setString(m_history + "\n" + m_prompt + m_cmd + m_cursor); /////// !!!!!!!
 		} else
 			if (m_clock.getElapsedTime().asMilliseconds() <= 1000) {
 				m_cmdline.setString(m_prompt + m_cmd);
+				//m_output.setString(m_history + "\n" + m_prompt + m_cmd); ////// !!!!!!!
 			} else
 				m_clock.restart();
 			
@@ -135,9 +165,10 @@ void Console::key(const sf::Event &event) {
 
 void Console::execute(const std::string &cmd) {
 	if (cmd != "") {
-		if (cmd == "clear") {
+		if (cmd == "clear") {/*
 			m_history	= "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-			m_output.setString(m_history);
+			m_output.setString(m_history);*/
+			resetOutput();
 			
 			return;
 		}
@@ -163,7 +194,7 @@ void Console::writeln(const std::string &str) {
 	int eolnum = std::count(m_history.begin(), m_history.end(), '\n');
 	int i 	= 0;
 	
-	while(eol < eolnum - 14) {
+	while(eol < eolnum - m_outputLines + 1) {
 		if (m_history[i] == '\n')
 			eol++;
 			

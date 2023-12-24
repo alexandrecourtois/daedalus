@@ -24,9 +24,13 @@ private:
 	
 	sf::Clock			m_clock;
 	
+	unsigned int		m_outputLines;
+	unsigned int		m_fontSize;
+	
 	void expand();
 	void retract();
 	void execute(const std::string &cmd);
+	void resetOutput();
 
 public:
     Console();
