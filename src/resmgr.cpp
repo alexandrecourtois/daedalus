@@ -31,6 +31,7 @@ void ResMgr::init() {
     ResMgr::loadFont("res/DooM.ttf", "DOOM");
 	ResMgr::loadFont("res/PixeloidMono.ttf", "PIX_MONO");
 	ResMgr::loadFont("res/roboto_mono_regular.ttf", "RMR");
+	ResMgr::loadFont("res/msdos.ttf", "MSDOS");
 	
     ResMgr::loadTexture("res/marble.jpg", "CONSOLE_BG");
 	ResMgr::loadTexture("res/logo.jpg", "LOGO");

@@ -17,11 +17,11 @@ Console::Console() {
 	m_background.setFillColor(sf::Color(100, 50, 50, 127));
     m_background.setPosition(0, -m_background.getSize().y);
 	
-	m_cmdline = sf::Text { "]", *ResMgr::getFont("RMR") };
+	m_cmdline = sf::Text { "]", *ResMgr::getFont("MSDOS") };
 	m_cmdline.setCharacterSize(m_fontSize);
 	m_cmdline.setOrigin(m_cmdline.getLocalBounds().left, m_cmdline.getLocalBounds().top);
 	
-	m_output = sf::Text { "", *ResMgr::getFont("RMR") };
+	m_output = sf::Text { "", *ResMgr::getFont("MSDOS") };
 	m_output.setCharacterSize(m_fontSize);
 	m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top);
 	

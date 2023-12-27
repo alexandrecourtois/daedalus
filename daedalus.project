@@ -31,7 +31,7 @@
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
-        <IncludePath Value="./src/include"/>
+        <IncludePath Value="src/include"/>
       </Compiler>
       <Linker Options="">
         <LibraryPath Value="."/>

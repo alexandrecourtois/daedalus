@@ -7,7 +7,7 @@
 
 Hud::Hud() {
     m_showFPS = true;
-    m_fpsText.setFont(*ResMgr::getFont("DOOM"));
+    m_fpsText.setFont(*ResMgr::getFont("MSDOS"));
     m_fpsText.setScale(0.8, 0.8);
 	m_fpsText.setPosition(10.0f, 10.0f);
 }
