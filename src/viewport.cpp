@@ -18,7 +18,7 @@ Viewport::~Viewport() {
 
 void Viewport::run() {
 	create(sf::VideoMode(1024, 768), "daedalus");
-    setFramerateLimit(60);
+    //setFramerateLimit(60);
 	
 	m_scaleFactor.x = getSize().x / DEFAULT_WIDTH;
 	m_scaleFactor.y = getSize().y / DEFAULT_HEIGHT;

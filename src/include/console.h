@@ -11,6 +11,8 @@ private:
     bool                m_isVisible;
 	bool				m_isActive;
 	bool				m_isHidden;
+	bool				m_isInit;
+	bool				m_historyChanged;
     float        		m_speed;
 	
     sf::RectangleShape  m_background;
@@ -27,6 +29,7 @@ private:
 	unsigned int		m_outputLines;
 	unsigned int		m_fontSize;
 	
+	void initFonts();
 	void expand();
 	void retract();
 	void execute(const std::string &cmd);

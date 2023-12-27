@@ -1,4 +1,5 @@
 #include <resmgr.h>
+#include <console.h>
 
 std::map<std::string, sf::Font*> ResMgr::m_fonts = std::map<std::string, sf::Font*>();
 std::map<std::string, sf::Texture*> ResMgr::m_textures = std::map<std::string, sf::Texture*>();
@@ -11,6 +12,8 @@ ResMgr::~ResMgr() {
 
 void ResMgr::loadFont(const std::string &filename, const std::string &id) {
     sf::Font* f = new sf::Font();
+	
+	CONSOLE->writeln("Loading font " + filename);
     
     if (f->loadFromFile(filename))
         ResMgr::m_fonts[id] = f;

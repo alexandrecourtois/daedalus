@@ -11,6 +11,34 @@ Console::Console() {
 	m_isHidden	= true;
     m_speed 	= 2;
 	m_fontSize	= 24;
+	m_isInit	= false;
+	m_historyChanged = false;
+	
+	//initFonts();
+	
+	m_outputLines = (24 / m_fontSize) * 19;
+		
+
+	m_prompt 	= "]";
+	m_cursor 	= "_";
+	m_cmd		= "";
+	
+	for(unsigned int i = 0; i < m_outputLines; ++i)
+		m_history += '\n';
+		
+	m_history += "DEADALUS CMD";
+	//m_history	= "\n|\n|\n|\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAEDALUS CMD";
+	
+	//m_output.setString(m_history);
+	//m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top + m_output.getLocalBounds().height);
+	std::cout << m_outputLines << "\n";
+}
+
+Console::~Console() {
+}
+
+void Console::initFonts() {
+	std::cout << "Console::initFonts()\n";
 	
     m_background.setSize(sf::Vector2f(VIEWPORT->getSize().x, VIEWPORT->getSize().y * 0.8));
     //m_background.setTexture(ResMgr::getTexture("CONSOLE_BG"));
@@ -25,25 +53,7 @@ Console::Console() {
 	m_output.setCharacterSize(m_fontSize);
 	m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top);
 	
-	m_outputLines = (24 / m_fontSize) * 19;
-		
-
-	m_prompt 	= "]";
-	m_cursor 	= "_";
-	m_cmd		= "";
-	
-	for(unsigned int i = 0; i < m_outputLines; ++i)
-		m_history += '\n';
-		
-	m_history += "DEADALUS CMD";
-	//m_history	= "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAEDALUS CMD";
-	
-	m_output.setString(m_history);
-	//m_output.setOrigin(m_output.getLocalBounds().left, m_output.getLocalBounds().top + m_output.getLocalBounds().height);
-	std::cout << m_outputLines << "\n";
-}
-
-Console::~Console() {
+	m_isInit = true;
 }
 
 void Console::resetOutput() {
@@ -109,12 +119,20 @@ void Console::retract() {
 }
 
 void Console::draw() {
+	if (!m_isInit)
+		initFonts();
+	
     if (m_isVisible)
 		expand();
 	else
 		retract();			
 	
 	if (!m_isHidden) {
+		if (m_historyChanged) {
+			m_output.setString(m_history);
+			m_historyChanged = false;
+		}
+		
 		VIEWPORT->draw(m_background);
 		VIEWPORT->draw(m_cmdline);
 		VIEWPORT->draw(m_output);
@@ -179,15 +197,32 @@ void Console::execute(const std::string &cmd) {
 			return;
 		}
 		
+		if (cmd == "lock fps") {
+			VIEWPORT->setFramerateLimit(60);
+			CONSOLE->writeln("Max framerate : 60fps");
+			
+			return;
+		}
+		
+		if (cmd == "unlock fps") {
+			VIEWPORT->setFramerateLimit(0);
+			CONSOLE->writeln("Max framerate : free");
+			
+			return;
+		}
+		
 		writeln("Unknown command: " + cmd);
 	}
 }
 
 void Console::write(const std::string &str) {
 	m_history += str;
+	m_historyChanged = true;
 }
 
 void Console::writeln(const std::string &str) {
+	std::cout << str << "\n";
+	
 	write("\n" + str);
 	
 	int eol = 0;
@@ -202,5 +237,5 @@ void Console::writeln(const std::string &str) {
 	}
 	
 	m_history = m_history.substr(i - 1, m_history.size() - 1);
-	m_output.setString(m_history);
+//	m_output.setString(m_history);
 }
