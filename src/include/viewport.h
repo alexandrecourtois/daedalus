@@ -13,9 +13,10 @@ private:
     sf::Time        	m_elapsedTime;
 	sf::RectangleShape	m_logo;
     
-    float           m_FPS;
+    float           	m_FPS;
+	float					m_FPSTarget;
     
-    bool            m_consoleLock;
+    bool            	m_consoleLock;
 	
 public:
 	Viewport();
@@ -27,6 +28,9 @@ public:
 	sf::Vector2f 	getScaleFactor();
     unsigned int 	getFPS();
 	float 			getRateFactor();
+	float			getElapsedTime();
+	
+	friend class Console;
 };
 
 #define VIEWPORT   Viewport::get()

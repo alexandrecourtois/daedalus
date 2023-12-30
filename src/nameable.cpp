@@ -4,7 +4,7 @@ Nameable::Nameable() {
 }
 
 Nameable::Nameable(std::string name) {
-	name = name;
+	m_name = name;
 }
 
 Nameable::~Nameable()
@@ -12,9 +12,9 @@ Nameable::~Nameable()
 }
 
 void Nameable::setName(std::string name) {
-	name = name;
+	m_name = name;
 }
 
 std::string Nameable::getName() {
-	return name;
+	return m_name;
 }

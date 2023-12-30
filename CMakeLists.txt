@@ -69,15 +69,20 @@ link_directories(
 
 # Define the CXX sources
 set ( CXX_SRCS
-    ${CMAKE_CURRENT_LIST_DIR}/src/console.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/gun.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/resmgr.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/nameable.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/viewport.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/player.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/hud.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/AnimatedGIF.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/dataref.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/sprite.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/viewport.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/tools.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/player.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/gun.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/stringvector.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/rc_engine.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/nameable.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/console.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/resmgr.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/hud.cpp
 )
 
 set_source_files_properties(
@@ -103,6 +108,7 @@ target_link_libraries(daedalus
     sfml-system
     sfml-graphics
     sfml-window
+    sfml-audio
 )
 
 

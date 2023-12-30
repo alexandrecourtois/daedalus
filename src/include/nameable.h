@@ -5,7 +5,7 @@
 
 class Nameable {
 private:
-	std::string name;
+	std::string m_name;
 	
 protected:
 	Nameable();

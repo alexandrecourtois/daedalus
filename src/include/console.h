@@ -5,6 +5,10 @@
 #include <drawable.h>
 #include <SFML/Graphics.hpp>
 #include <string>
+#include <map>
+#include <iostream>
+#include <AnimatedGIF.h>
+#include <SFML/Audio.hpp>
 
 class Console: public Single<Console>, Drawable {
 private:
@@ -14,10 +18,17 @@ private:
 	bool				m_isInit;
 	bool				m_historyChanged;
     float        		m_speed;
+	bool				m_JPmode;
+	bool				m_ahahah;
 	
+	sf::SoundBuffer		m_tetaclaq;
+	sf::Sound			m_youdidntsaythemagicword;
     sf::RectangleShape  m_background;
 	sf::Text			m_cmdline;
 	sf::Text			m_output;
+	sf::Sprite			m_nedry;
+	
+	AnimatedGIF			m_fatboy;
 	
 	std::string			m_prompt;
 	std::string			m_cmd;
@@ -32,7 +43,7 @@ private:
 	void initFonts();
 	void expand();
 	void retract();
-	void execute(const std::string &cmd);
+	void execute(std::string cmd);
 	void resetOutput();
 
 public:

@@ -3,6 +3,11 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/AnimatedGIF.cpp"/>
+    <File Name="src/dataref.cpp"/>
+    <File Name="src/rc_engine.cpp"/>
+    <File Name="src/stringvector.cpp"/>
+    <File Name="src/tools.cpp"/>
     <File Name="src/hud.cpp"/>
     <File Name="src/main.cpp"/>
     <File Name="src/console.cpp"/>
@@ -13,6 +18,11 @@
     <File Name="src/viewport.cpp"/>
     <File Name="src/player.cpp"/>
     <VirtualDirectory Name="include">
+      <File Name="src/include/AnimatedGIF.h"/>
+      <File Name="src/include/dataref.h"/>
+      <File Name="src/include/rc_engine.h"/>
+      <File Name="src/include/stringvector.h"/>
+      <File Name="src/include/tools.h"/>
       <File Name="src/include/player.h"/>
       <File Name="src/include/map.h"/>
       <File Name="src/include/resmgr.h"/>
@@ -38,6 +48,7 @@
         <Library Value="sfml-system"/>
         <Library Value="sfml-graphics"/>
         <Library Value="sfml-window"/>
+        <Library Value="sfml-audio"/>
       </Linker>
       <ResourceCompiler Options=""/>
     </GlobalSettings>
