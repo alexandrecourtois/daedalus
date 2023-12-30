@@ -1,0 +1,129 @@
+[{
+  "file": "/home/alexandre/Prog/daedalus/src/include/viewport.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/viewport.h -o /home/alexandre/Prog/daedalus/src/include/viewport.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/console.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/console.h -o /home/alexandre/Prog/daedalus/src/include/console.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/dataref.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/dataref.cpp -o /home/alexandre/Prog/daedalus/src/dataref.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/sprite.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/sprite.cpp -o /home/alexandre/Prog/daedalus/src/sprite.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/resmgr.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/resmgr.h -o /home/alexandre/Prog/daedalus/src/include/resmgr.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/viewport.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/viewport.cpp -o /home/alexandre/Prog/daedalus/src/viewport.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/tools.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/tools.cpp -o /home/alexandre/Prog/daedalus/src/tools.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/animation.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/animation.h -o /home/alexandre/Prog/daedalus/src/include/animation.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/gun.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/gun.cpp -o /home/alexandre/Prog/daedalus/src/gun.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/AnimatedGIF.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/AnimatedGIF.cpp -o /home/alexandre/Prog/daedalus/src/AnimatedGIF.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/map.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/map.h -o /home/alexandre/Prog/daedalus/src/include/map.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/sprite.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/sprite.h -o /home/alexandre/Prog/daedalus/src/include/sprite.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/stringvector.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/stringvector.cpp -o /home/alexandre/Prog/daedalus/src/stringvector.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/rc_engine.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/rc_engine.cpp -o /home/alexandre/Prog/daedalus/src/rc_engine.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/nameable.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/nameable.cpp -o /home/alexandre/Prog/daedalus/src/nameable.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/player.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/player.cpp -o /home/alexandre/Prog/daedalus/src/player.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/dataref.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/dataref.h -o /home/alexandre/Prog/daedalus/src/include/dataref.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/rc_engine.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/rc_engine.h -o /home/alexandre/Prog/daedalus/src/include/rc_engine.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/stringvector.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/stringvector.h -o /home/alexandre/Prog/daedalus/src/include/stringvector.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/tools.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/tools.h -o /home/alexandre/Prog/daedalus/src/include/tools.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/console.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/console.cpp -o /home/alexandre/Prog/daedalus/src/console.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/resmgr.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/resmgr.cpp -o /home/alexandre/Prog/daedalus/src/resmgr.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/player.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/player.h -o /home/alexandre/Prog/daedalus/src/include/player.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/single.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/single.h -o /home/alexandre/Prog/daedalus/src/include/single.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/nameable.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/nameable.h -o /home/alexandre/Prog/daedalus/src/include/nameable.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/gun.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/gun.h -o /home/alexandre/Prog/daedalus/src/include/gun.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/animator.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/animator.h -o /home/alexandre/Prog/daedalus/src/include/animator.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/main.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/main.cpp -o /home/alexandre/Prog/daedalus/src/main.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/hud.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/hud.h -o /home/alexandre/Prog/daedalus/src/include/hud.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/AnimatedGIF.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/AnimatedGIF.h -o /home/alexandre/Prog/daedalus/src/include/AnimatedGIF.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/hud.cpp",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/hud.cpp -o /home/alexandre/Prog/daedalus/src/hud.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/alexandre/Prog/daedalus/src/include/drawable.h",
+  "directory": "/home/alexandre/Prog/daedalus",
+  "command": "/usr/bin/g++ -c /home/alexandre/Prog/daedalus/src/include/drawable.h -o /home/alexandre/Prog/daedalus/src/include/drawable.h.o -target x86_64-linux-gnu -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -Isrc/include -I.  -gdwarf-2  -O0  -Wall"
+ }]
